@@ -140,7 +140,7 @@ div {
 }
 
 .gallery p{
-    font-size: 100px;
+    font-size: 90px;
     text-transform: uppercase;
 
     letter-spacing: -3px;
@@ -175,7 +175,7 @@ div {
 }
 
 .title p{
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bold;
     text-transform: uppercase;
     margin-left: 70px;
@@ -209,7 +209,6 @@ div {
     background-color: rgba(255, 255, 255, 0.47);
     margin-left: 50px;
     margin-right: 50px;
-    flex-shrink: 0;
     border-radius: 20px;
 }
 
@@ -239,4 +238,82 @@ div {
     opacity: 80%;
 }
 
+/*Учебная программа и заявка на звонок*/
+.education{
+    width: 94%;
+    height: 80vh;
+    margin-bottom: 10vh;
+    background-color: rgba(221, 226, 238, 1);
+    border-radius: 30px;
+    flex-direction: column;
+}
+
 /*Нижнее меню*/
+
+.footer{
+    justify-content: space-between;
+    width: 94%;
+    height: 45vh;
+    margin-bottom: 5vh;
+    background-color: rgba(221, 226, 238, 1);
+    border-radius: 30px;
+}
+
+.footer_card {
+    width: 22%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.footer_card h1 {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.footer_text {
+    font-size: 18px;
+    word-wrap: break-word;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.footer_text p {
+    margin: 0 0 9px;
+}
+
+#to_applicants{
+    margin-left: 25px;
+}
+
+#contact_info {
+    margin-right: 25px;
+    text-align: right;
+    align-items: flex-end;
+}
+
+#contact_info p {
+    margin: 0 0 12px;
+}
+
+#contact_info a {
+    text-decoration: none;
+    color: #186b94;
+    font-weight: bold;
+}
+
+#contact_info a:hover {
+    color: #5aa0c7;
+}
+
+#phone_number {
+    padding: 0;
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    border-style: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
