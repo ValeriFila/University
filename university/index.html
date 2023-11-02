@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ГМУ имени адм. Ф.Ф. Ушакова</title>
+  </head>
+  <body>
+    <div class="university">
+      <div class="menu_header">
+        <div class="menu">
+          <div class="icon">
+            <img src="dist/icons/university.png" alt="university icon">
+            <p>ГМУ имени адмирала Ф.Ф. Ушакова</p>
+          </div>
+          <div class="menu_items">
+            <p class="item">Университет</p>
+            <p class="item">Образование</p>
+            <p class="item">Поступающим</p>
+            <p class="item">Студентам</p>
+            <p class="item">Новости и события</p>
+            <p class="item">Контакты</p>
+            <img src="dist/icons/eye.png" alt="eye image">
+          </div>
+        </div>
+      </div>
+
+      <div class="main">
+        <div class="animated_block" id = "anim_block">
+          <div class="main_building" id = "autoAnimSliderImage"></div>
+        </div>
+        <div class="gallery">
+          <p>гму имени адмирала Ф.Ф. Ушакова</p>
+        </div>
+      </div>
+
+      <div class="news">
+        <div class="title">
+          <p>новости</p>
+        </div>
+
+        <div class="content">
+          <div class="cards" id="anim_cards"></div>
+
+          <div class="direction_buttons">
+            <button id="toLeftButton"><img src="dist/icons/to_left.png" alt="to left button"></button>
+            <button id="toRightButton"><img src="dist/icons/to_right.png" alt="to right button"></button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="events"></div>
+
+      <div class="education"></div>
+
+      <div class="footer"></div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

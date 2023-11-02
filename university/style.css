@@ -1,0 +1,242 @@
+html {
+    font-size: 16px;
+    font-family: "Century Gothic";
+    color: rgba(21, 24, 57, 1);
+    background-color: rgba(225, 239, 255, 0.36);
+    /*--s: 30px; !* control the size*!*/
+    /*--c1: #e5fcc2;*/
+    /*--c2: #45ada8;*/
+
+    /*--_s:37.5% 12.5% at 62.5%;*/
+    /*--_g:34% 99%,#0000 101%;*/
+    /*--g1:radial-gradient(var(--_s) 100%,#0000 32%,var(--c1) var(--_g));*/
+    /*--g2:radial-gradient(var(--_s) 0   ,#0000 32%,var(--c1) var(--_g));*/
+    /*--g3:radial-gradient(var(--_s) 100%,#0000 32%,var(--c2) var(--_g));*/
+    /*--g4:radial-gradient(var(--_s) 0   ,#0000 32%,var(--c2) var(--_g));*/
+    /*background:*/
+    /*        var(--g1),*/
+    /*        var(--g2) 0                calc(3*var(--s)),*/
+    /*        var(--g3) var(--s)         calc(3*var(--s)),*/
+    /*        var(--g4) var(--s)         calc(6*var(--s)),*/
+    /*        var(--g1) calc(2*var(--s)) calc(6*var(--s)),*/
+    /*        var(--g2) calc(2*var(--s)) calc(9*var(--s)),*/
+    /*        var(--g3) calc(3*var(--s)) calc(9*var(--s)),*/
+    /*        var(--g4) calc(3*var(--s)) 0,*/
+    /*        repeating-linear-gradient(var(--c1) 0 25%,var(--c2) 0 50%);*/
+    /*background-size: calc(4*var(--s)) calc(12*var(--s));*/
+
+}
+
+
+body {
+    margin: 0 auto;
+    width: 100%;
+}
+
+div {
+    display: flex;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.university {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+/*Верхнее меню*/
+.menu_header {
+    width: 94%;
+    height: 10vh;
+}
+
+.menu {
+    width: 100%;
+}
+
+.icon {
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon img {
+    width: 3em;
+    height: 3em;
+}
+
+.icon p {
+    width: 12em;
+    text-align: center;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.menu_items {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-left: 50px;
+}
+
+.menu_items p {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu_items p:hover {
+    color: rgba(29, 32, 54, 0.64);
+}
+
+.menu_items img {
+    width: 3em;
+    height: 3em;
+    cursor: pointer;
+    margin-right: 0;
+}
+
+/*Главная часть*/
+.main {
+    width: 94%;
+    height: 80vh;
+    margin-bottom: 10vh;
+}
+
+/*Анимированная галерея ГМУ*/
+.animated_block {
+    position: relative;
+    justify-content: left;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 30px;
+    background-color: black;
+}
+
+#anim_block {
+    width: 100%;
+}
+
+.main_building img{
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+}
+
+#autoAnimSliderImage {
+    transform: translate(0);
+    transition: transform 2s;
+}
+
+.gallery{
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: inherit;
+    height: inherit;
+}
+
+.gallery p{
+    font-size: 100px;
+    text-transform: uppercase;
+
+    letter-spacing: -3px;
+    transition: 700ms ease;
+    font-variation-settings: "wght" 311;
+    margin-bottom: 15rem;
+    color: rgba(221, 226, 238, 1);
+    outline: none;
+    text-align: center;
+
+}
+
+.gallery p:hover {
+    font-variation-settings: "wght" 582;
+    letter-spacing: 1px;
+}
+
+/*Новости*/
+.news{
+    width: 94%;
+    height: 80vh;
+    margin-bottom: 10vh;
+    background-color: rgba(221, 226, 238, 1);
+    border-radius: 30px;
+    flex-direction: column;
+}
+
+.title {
+    /*background-color: aquamarine;*/
+    height: 8em;
+    width: 100%;
+}
+
+.title p{
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 70px;
+}
+
+.content {
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+    overflow: hidden;
+    /*background-color: rgb(155, 179, 211);*/
+    border-radius: 0 0 30px 30px;
+    position: relative;
+}
+
+.cards {
+    height: 100%;
+    align-items: center;
+    margin-left: 20px;
+}
+
+#anim_cards{
+    transform: translate(0);
+    transition: transform 2s;
+}
+
+.single_card {
+    height: 85%;
+    width: 30vw;
+    background-color: rgba(255, 255, 255, 0.47);
+    margin-left: 50px;
+    margin-right: 50px;
+    flex-shrink: 0;
+    border-radius: 20px;
+}
+
+.direction_buttons {
+    /*background-color: black;*/
+    width: 100%;
+    height: 5em;
+    position: absolute;
+    justify-content: space-between;
+
+}
+
+.direction_buttons img {
+    width: 50px;
+    opacity: 70%;
+}
+
+.direction_buttons button {
+    opacity: 50%;
+    cursor: pointer;
+    border-radius: 100px;
+    border-style: none;
+    background-color: transparent;
+}
+
+.direction_buttons button:hover{
+    opacity: 80%;
+}
+
+/*Нижнее меню*/
