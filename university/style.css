@@ -99,6 +99,48 @@ div {
     margin-right: 0;
 }
 
+.mail {
+    height: 3em;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Century Gothic";
+    color: rgba(21, 24, 57, 1);
+    font-weight: bold;
+    border-style: none;
+    background: linear-gradient(#afafec, #beade1);
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.mail:hover {
+    -webkit-box-shadow: 6px 6px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 6px 6px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 6px 6px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.popap {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 45vw;
+    height: 60vh;
+    background-color: #afafec;
+    position: absolute;
+    visibility: hidden;
+    border-radius: 20px;
+    max-width: 600px;
+    z-index: 100;
+}
+
+#blur_background {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
 /*Главная часть*/
 .main {
     width: 94%;
@@ -140,11 +182,11 @@ div {
 }
 
 .gallery p{
-    font-size: 90px;
+    font-size: 95px;
     text-transform: uppercase;
 
     letter-spacing: -3px;
-    transition: 700ms ease;
+    transition: 1200ms ease;
     font-variation-settings: "wght" 311;
     margin-bottom: 15rem;
     color: rgba(221, 226, 238, 1);
@@ -281,6 +323,7 @@ div {
 
 .footer_text p {
     margin: 0 0 9px;
+    cursor: pointer;
 }
 
 #to_applicants{

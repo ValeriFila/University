@@ -8,6 +8,7 @@
   </head>
   <body>
     <div class="university">
+
       <div class="menu_header">
         <div class="menu">
           <div class="icon">
@@ -19,9 +20,9 @@
             <p class="item">Образование</p>
             <p class="item">Поступающим</p>
             <p class="item">Студентам</p>
-            <p class="item">Новости и события</p>
             <p class="item">Контакты</p>
             <img src="dist/icons/eye.png" alt="eye image">
+            <button class="mail" id="sendButton">Связаться с нами</button>
           </div>
         </div>
       </div>
@@ -34,6 +35,10 @@
           <p>гму имени адмирала Ф.Ф. Ушакова</p>
         </div>
       </div>
+
+      <div id="blur_background"></div>
+
+      <div class="popap" id="popap"></div>
 
       <div class="news">
         <div class="title">
@@ -106,7 +111,9 @@
           <p>По общим вопросам: <a href="mailto:info@imes.su">info@imes.su</a></p>
         </div>
       </div>
+
     </div>
     <script type="module" src="/main.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"> </script>
   </body>
 </html>

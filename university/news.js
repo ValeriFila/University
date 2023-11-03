@@ -6,6 +6,7 @@ const buttonToRight = document.getElementById('toRightButton')
 //количество карточек
 let k = 10;
 let cardIndex = 0;
+let lastCard;
 
 //массив карточек
 (function () {
@@ -17,18 +18,18 @@ let cardIndex = 0;
 const buildArrayOfCards = () => {
     for (let i = 0; i < k; i++) {
         arrayOfCards.innerHTML += `
-            <div class="single_card" id="card">
+            <div class="single_card" id="${i+1}card">
               <p>${i+1}</p>
             </div>
         `
     }
+    lastCard = document.getElementById(`${k}card`)
+    lastCard.style.marginRight = '-200px'
 }
 buildArrayOfCards();
-const card = document.getElementById('card')
+const card = document.getElementById('1card')
 const CARD_WIDTH = card.offsetWidth + 100;
 console.log(CARD_WIDTH);
-
-
 
 const toLeftClick = () => {
     if (cardIndex === 0) {
