@@ -1,1 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ГМУ имени адм. Ф.Ф. Ушакова</title>
+  </head>
+  <body>
+    <div class="university">
 
+      <div class="menu_header">
+        <div class="menu">
+          <div class="icon">
+            <img src="dist/icons/university.png" alt="university icon">
+            <p>ГМУ имени адмирала Ф.Ф. Ушакова</p>
+          </div>
+          <div class="menu_items">
+            <button class="item">Университет</button>
+            <button class="item">Образование</button>
+            <button class="item">Поступающим</button>
+            <button class="item">Студентам</button>
+            <button class="item">Контакты</button>
+            <img src="dist/icons/eye.png" alt="eye image">
+            <button class="mail" id="sendButton">Связаться с нами</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="main">
+        <div class="animated_block" id = "anim_block">
+          <div class="main_building" id = "autoAnimSliderImage"></div>
+        </div>
+        <div class="gallery">
+          <p>гму имени адмирала Ф.Ф. Ушакова</p>
+        </div>
+      </div>
+
+      <div id="blur_background"></div>
+
+      <div class="popup" id="popup">
+        <form id="write_email_form" action="">
+          <p>ФОРМА ОБРАТНОЙ СВЯЗИ</p>
+          <input type="text" id="name" class="custom_input" name="user_name" placeholder="Введите имя">
+
+          <input type="email" id="email" class="custom_input" name="user_email" placeholder="Введите e-mail">
+
+          <textarea id="text" name="text" class="custom_input" placeholder="Введите тему обращения"></textarea>
+
+          <button id="confirm_button" name="confirm">ОТПРАВИТЬ</button>
+        </form>
+        <div class="image_ship"><img src="dist/images/ship.jpg"></div>
+      </div>
+
+      <div class="news">
+        <div class="title">
+          <p>новости и события</p>
+        </div>
+
+        <div class="content">
+          <div class="cards" id="anim_cards">
+
+          </div>
+
+          <div class="direction_buttons">
+            <button id="toLeftButton"><img src="dist/icons/to_left.png" alt="to left button"></button>
+            <button id="toRightButton"><img src="dist/icons/to_right.png" alt="to right button"></button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer">
+        <div class="footer_card" id="to_applicants">
+          <h1>поступающим</h1>
+          <div class="footer_text">
+            <p>Приемная комиссия</p>
+            <p>Образовательные программы</p>
+            <p>Дополнительное образование</p>
+            <p>Олимпиада школьников</p>
+            <p>Подготовительные курсы</p>
+            <p>Дни открытых дверей</p>
+            <p>История университета</p>
+            <p>Профориентация школьников</p>
+            <p>Информация для иностранных граждан</p>
+          </div>
+        </div>
+        <div class="footer_card" id="to_students">
+          <h1>студентам</h1>
+          <div class="footer_text">
+            <p>Библиотека</p>
+            <p>Общежития</p>
+            <p>Олимпиада для студентов</p>
+            <p>Социальная защита</p>
+            <p>Доступная среда</p>
+            <p>Электронное расписание</p>
+            <p>Личный кабинет обучающегося</p>
+            <p>Академическая мобильность</p>
+            <p>Спорт</p>
+          </div>
+          <div class="footer_text"></div>
+        </div>
+        <div class="footer_card" id="to_partners">
+          <h1>партнерам</h1>
+          <div class="footer_text">
+            <p>Научный парк</p>
+            <p>Многофункциолнальный платежный ассистент</p>
+            <p>Центр медитации</p>
+            <p>Организация мероприятий</p>
+            <p>Центр языкового тестирования</p>
+            <p>Подгтовка экспертных заключений</p>
+            <p>Реквизиты ГМУ</p>
+            <p>Лицензии</p>
+            <p>Деятельность организации</p>
+          </div>
+        </div>
+        <div class="footer_card" id="contact_info">
+          <h1>Контакты</h1>
+          <p id="phone_number"><a href="tel:+78617767800">+7 (8617) 76-78-00</a></p>
+          <p>г. Новороссийск, просп. Ленина, 93 </p>
+          <br>
+          <p>Приёмная комиссия: <a href="mailto:priem@imes.su">priem@imes.su</a></p>
+          <p>По общим вопросам: <a href="mailto:info@imes.su">info@imes.su</a></p>
+        </div>
+      </div>
+
+    </div>
+    <script type="module" src="/main.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"> </script>
+  </body>
+</html>
