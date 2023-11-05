@@ -2,7 +2,7 @@ html {
     font-size: 16px;
     font-family: "Century Gothic";
     color: rgba(21, 24, 57, 1);
-    background-color: rgba(225, 239, 255, 0.36);
+    background-color: rgba(36, 47, 77, 0.65);
     /*--s: 30px; !* control the size*!*/
     /*--c1: #e5fcc2;*/
     /*--c2: #45ada8;*/
@@ -82,14 +82,24 @@ div {
     margin-left: 50px;
 }
 
-.menu_items p {
+
+
+.item {
+    background-color: transparent;
+    height: 30px;
+    border: none;
     cursor: pointer;
     font-size: 18px;
     font-weight: bold;
+    color: #1e1e3f;
+    transition: color 1s, border-bottom-width 2s, border-bottom-color 1s;
 }
 
-.menu_items p:hover {
-    color: rgba(29, 32, 54, 0.64);
+.item:hover {
+    color: rgba(30, 34, 73, 0.57);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(30, 34, 73, 0.57);
 }
 
 .menu_items img {
@@ -100,37 +110,42 @@ div {
 }
 
 .mail {
-    height: 3em;
+    height: 50px;
+    width: 200px;
     cursor: pointer;
     font-size: 16px;
     font-family: "Century Gothic";
-    color: rgba(21, 24, 57, 1);
     font-weight: bold;
     border-style: none;
-    background: linear-gradient(#afafec, #beade1);
+    background-color: rgba(30, 30, 63, 0.87);
+    color: rgba(221, 226, 238, 1);
+    color: rgba(221, 226, 238, 1);
     border-radius: 10px;
     -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
     box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    transition: font-size 2s;
 }
 
 .mail:hover {
     -webkit-box-shadow: 6px 6px 8px 0px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 6px 6px 8px 0px rgba(34, 60, 80, 0.2);
     box-shadow: 6px 6px 8px 0px rgba(34, 60, 80, 0.2);
+    font-size: 17px;
 }
 
-.popap {
+.popup {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 45vw;
+    width: 60vw;
     height: 60vh;
-    background-color: #afafec;
+    background-color: #313167;
     position: absolute;
     visibility: hidden;
-    border-radius: 20px;
-    max-width: 600px;
+    border-radius: 10px;
+    max-width: 900px;
+    min-width: 50vw;
     z-index: 100;
 }
 
@@ -139,6 +154,113 @@ div {
     width: 100%;
     position: absolute;
     z-index: -1;
+
+}
+
+.open {
+    backdrop-filter: blur(10px);
+    background-color: #0000004d;
+    z-index: 99 !important;
+}
+
+.empty_field {
+    border-bottom-color: #e36969;
+}
+
+.full_field {
+    border-bottom-color: azure;
+}
+
+#write_email_form {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+    flex-direction: column;
+}
+
+#write_email_form p{
+    color: #161638;
+    width: 80%;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.image_ship {
+    object-fit: cover;
+    width: 40%;
+}
+
+.image_ship img {
+    width: 100%;
+    object-fit: cover;
+    opacity: 80%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#name {
+    margin-top: 70px;
+}
+
+input::-webkit-input-placeholder {
+    color: rgba(155, 155, 155, 0.7);
+    font-family: "Century Gothic";
+}
+
+textarea::-webkit-input-placeholder {
+    color: rgba(155, 155, 155, 0.7);
+    font-family: "Century Gothic";
+}
+
+.custom_input {
+    width: 80%;
+    margin-top: 150px;
+    font-size: 19px;
+    color: #cecece;
+    font-family: "Century Gothic";
+    background-color: transparent;
+    outline: none;
+    border-style: solid;
+    border-width: 2px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+#email {
+    margin-top: 50px;
+}
+
+#text {
+    resize: none;
+    width: 80%;
+    margin-top: 50px;
+    height: 20%;
+}
+
+#confirm_button {
+    width: 60%;
+    align-self: flex-start;
+    margin-left: 10%;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    height: 50px;
+    font-family: "Century Gothic";
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 7px;
+    border: none;
+    transition: width 2s, background-color 1s, color 1s, letter-spacing 1s;
+}
+
+#confirm_button:hover {
+    width: 50%;
+    background-color: #1e1e3f;
+    color: #e1deff;
+    letter-spacing: 1px;
 }
 
 /*Главная часть*/
@@ -184,7 +306,6 @@ div {
 .gallery p{
     font-size: 95px;
     text-transform: uppercase;
-
     letter-spacing: -3px;
     transition: 1200ms ease;
     font-variation-settings: "wght" 311;
@@ -205,7 +326,7 @@ div {
     width: 94%;
     height: 80vh;
     margin-bottom: 10vh;
-    background-color: rgba(221, 226, 238, 1);
+    background-color: rgba(30, 30, 63, 0.51);
     border-radius: 30px;
     flex-direction: column;
 }
@@ -248,7 +369,7 @@ div {
 .single_card {
     height: 85%;
     width: 30vw;
-    background-color: rgba(255, 255, 255, 0.47);
+    background-color: rgba(255, 255, 255, 0.29);
     margin-left: 50px;
     margin-right: 50px;
     border-radius: 20px;
@@ -285,7 +406,7 @@ div {
     width: 94%;
     height: 80vh;
     margin-bottom: 10vh;
-    background-color: rgba(221, 226, 238, 1);
+    background-color: rgba(30, 30, 63, 0.51);
     border-radius: 30px;
     flex-direction: column;
 }
@@ -297,7 +418,7 @@ div {
     width: 94%;
     height: 45vh;
     margin-bottom: 5vh;
-    background-color: rgba(221, 226, 238, 1);
+    background-color: rgba(30, 30, 63, 0.51);
     border-radius: 30px;
 }
 
@@ -342,12 +463,12 @@ div {
 
 #contact_info a {
     text-decoration: none;
-    color: #186b94;
+    color: #6680d2;
     font-weight: bold;
 }
 
 #contact_info a:hover {
-    color: #5aa0c7;
+    color: rgba(102, 128, 210, 0.57);
 }
 
 #phone_number {

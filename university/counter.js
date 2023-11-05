@@ -8,7 +8,7 @@ const IMAGE_WIDTH = document.getElementById('anim_block').offsetWidth;
 for (let i = 0; i < k; i++) {
     images.push(i + 1 + '.JPG');
 }
-console.log((images))
+
 //function expression
 const buildAutoAnimatedGallery = function () {
     for (let i = 0; i < k; i++) {

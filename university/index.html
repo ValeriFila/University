@@ -16,11 +16,11 @@
             <p>ГМУ имени адмирала Ф.Ф. Ушакова</p>
           </div>
           <div class="menu_items">
-            <p class="item">Университет</p>
-            <p class="item">Образование</p>
-            <p class="item">Поступающим</p>
-            <p class="item">Студентам</p>
-            <p class="item">Контакты</p>
+            <button class="item">Университет</button>
+            <button class="item">Образование</button>
+            <button class="item">Поступающим</button>
+            <button class="item">Студентам</button>
+            <button class="item">Контакты</button>
             <img src="dist/icons/eye.png" alt="eye image">
             <button class="mail" id="sendButton">Связаться с нами</button>
           </div>
@@ -38,7 +38,19 @@
 
       <div id="blur_background"></div>
 
-      <div class="popap" id="popap"></div>
+      <div class="popup" id="popup">
+        <form id="write_email_form" action="">
+          <p>ФОРМА ОБРАТНОЙ СВЯЗИ</p>
+          <input type="text" id="name" class="custom_input" name="user_name" placeholder="Введите имя">
+
+          <input type="email" id="email" class="custom_input" name="user_email" placeholder="Введите e-mail">
+
+          <textarea id="text" name="text" class="custom_input" placeholder="Введите тему обращения"></textarea>
+
+          <button id="confirm_button" name="confirm">ОТПРАВИТЬ</button>
+        </form>
+        <div class="image_ship"><img src="dist/images/ship.jpg"></div>
+      </div>
 
       <div class="news">
         <div class="title">

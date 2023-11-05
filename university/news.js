@@ -29,7 +29,6 @@ const buildArrayOfCards = () => {
 buildArrayOfCards();
 const card = document.getElementById('1card')
 const CARD_WIDTH = card.offsetWidth + 100;
-console.log(CARD_WIDTH);
 
 const toLeftClick = () => {
     if (cardIndex === 0) {
