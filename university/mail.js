@@ -68,7 +68,7 @@ function validateForm() {
             From : "universitygmuushacova@gmail.com",
             Subject : SUBJECT,
             Body : `Здравствуйте, ${name}! Спасибо за обращение в ГМУ 
-            Ушакова! Ожидайте ответа оператора.`
+            Ушакова! Ожидайте ответного письма.`
         }).then(
             console.log('сообщение успешно отправлено')
         );
